@@ -1,5 +1,5 @@
 // API URL
-const apiUrl = 'http://localhost:5000/api/guides'; // Replace with your actual API URL
+const apiUrl = 'https://project-web1-delta.vercel.app/api/guides'; // Replace with your actual API URL
 
 // Fetch the guide data from the API
 async function fetchGuideData() {
