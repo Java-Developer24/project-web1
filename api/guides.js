@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Guide = require("../models/Guides.models"); // Make sure this model is also adjusted for serverless use
 
 // Connect to MongoDB
-mongoose.connect("mongodb+srv://your-mongo-db-connection-string", { 
+mongoose.connect("mongodb+srv://balu:balu@cluster0.1pebo.mongodb.net/guides_db", { 
   useNewUrlParser: true, 
   useUnifiedTopology: true 
 });

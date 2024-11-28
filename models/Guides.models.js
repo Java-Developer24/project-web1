@@ -1,12 +1,11 @@
-// models/Guide.js
-const mongoose = require("mongoose");
+// /models/Guide.models.js
+import mongoose from 'mongoose';
 
 const guideSchema = new mongoose.Schema({
-  id: Number,
-  name: String,
-  tickets: [Number],
+  guideID: { type: String, required: true },
+  guideName: { type: String, required: true },
+  tickets: { type: Number, default: 0 },
 });
 
-const Guide = mongoose.model("Guide", guideSchema);
-
-module.exports = Guide;
+const Guide = mongoose.models.Guide || mongoose.model('Guide', guideSchema);
+export default Guide;
