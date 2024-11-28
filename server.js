@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 // Serve static files from the 'public' folder
-app.use(express.static(path.join(__dirname, "public")));
+express.static(path.join(__dirname, 'public'))
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI || "mongodb+srv://balu:balu@cluster0.1pebo.mongodb.net/guides_db", { 
