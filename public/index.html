@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guide Ticket Contest</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Guide Ticket Contest</h1>
+
+  <div class="tabs">
+    <button id="contest-tab" class="active">Contest</button>
+    <button id="admin-tab">Admin Dashboard</button>
+  </div>
+
+  <!-- Contest View -->
+  <div id="contest-view">
+    <button id="generate-random">Generate Random Ticket</button>
+    <p id="result" class="result-display"></p>
+  </div>
+
+  <!-- Admin Dashboard View -->
+  <div id="admin-view" style="display: none;">
+    <h2>Admin Dashboard</h2>
+    <div class="summary">
+      <p>Total Guides: <span id="guide-count"></span></p>
+      <p>Total Tickets: <span id="ticket-count"></span></p>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Guide ID</th>
+          <th>Guide Name</th>
+          <th>Tickets</th>
+        </tr>
+      </thead>
+      <tbody id="admin-dashboard"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
