@@ -1,5 +1,5 @@
 // API URL
-onst apiUrl = 'https://project-web1-git-main-java-developer24s-projects.vercel.app/api/guides'; // Replace with your actual API URL
+const apiUrl = 'https://project-web1-git-main-java-developer24s-projects.vercel.app/api/guides'; // Replace with your actual API URL
 
 // Fetch the guide data from the API
 async function fetchGuideData() {
