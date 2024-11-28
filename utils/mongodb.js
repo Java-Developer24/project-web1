@@ -9,7 +9,7 @@ export const connectToDatabase = async () => {
   }
 
   try {
-    await mongoose.connect(process.env.MONGODB_URI, {
+    await mongoose.connect("mongodb+srv://balu:balu@cluster0.1pebo.mongodb.net/guides_db", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
